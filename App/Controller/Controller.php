@@ -23,6 +23,11 @@ class Controller
                         $controller = new UserController();
                         $controller->route();
                         break;
+                    case 'article':
+                        //charger controleur article
+                        $controller = new ArticleController();
+                        $controller->route();
+                        break;
                     default:
                         throw new \Exception("Le controleur n'existe pas");
                         break;
